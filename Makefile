@@ -6,13 +6,17 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/06 12:06:59 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/06 12:10:17 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = cc
 CFLAGS= -Wall -Wextra -Werror
+# ar = cree/modifie une archive (biblio statique .a)
+#   r : ajoute les .o dans l'archive (remplace ceux qui existent deja)
+#   c : crée l'archive si elle n'existe pas (sans message d'avertissement)
+#   s : ecrit un index des symboles pour que le linker trouve les fonctions
 AR = ar rcs
 RM = rm -f
 
