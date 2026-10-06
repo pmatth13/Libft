@@ -6,7 +6,7 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/06 13:56:57 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/06 14:48:57 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,9 @@ SRCS = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isprint.c \
 		ft_strlen.c \
+		ft_memset.c \
+		ft_bzero.c \
+		ft_memcpy.c \
 
 OBJS = $(SRCS:.c=.o)
 
