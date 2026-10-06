@@ -6,7 +6,7 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/06 12:10:17 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/06 12:37:42 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,12 @@ CFLAGS= -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
-SRCS := ft_isalpha.c \
+SRCS = ft_isalpha.c \
+		ft_isalnum.c\
+		ft_isascii.c\
+		ft_isdigit.c
 
-OBJS := $(SRCS:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
