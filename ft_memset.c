@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 14:31:50 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 14:31:51 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/07 12:09:07 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	a = (unsigned char *)s;
 	while (i < n)
 	{
-		a[i] = c;
+		a[i] = (unsigned char)c;
 		i++;
 	}
 	return (s);
