@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 12:35:42 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/08 16:59:29 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/08 17:03:19 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	**tab;
 	int		k;
@@ -103,4 +103,4 @@ int	main(void)
 	}
 	free(tab);
 	return (0);
-}
+} */
