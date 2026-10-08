@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/* Alloue et retourne une nouvelle chaine, resultat de la concatenation
+	de s1 et s2.
+	Retourne la nouvelle chaine, ou NULL si echec d'allocation */
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;

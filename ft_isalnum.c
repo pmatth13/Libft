@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:28:41 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 12:28:52 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:38:23 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_is_alpha(c) || ft_isdigit(c))
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	return (0);
 }

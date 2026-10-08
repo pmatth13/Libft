@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/* Convertit le caractere c en minuscule si majuscule sinon
+	le retourne inchange */
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

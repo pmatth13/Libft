@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/* Verifie si le caractere c fait partie de l'ensemble set
+	return 1 if true, 0 if false */
+
 static size_t	ft_flag(char c, char const *set)
 {
 	size_t	i;
@@ -25,6 +28,10 @@ static size_t	ft_flag(char c, char const *set)
 	}
 	return (0);
 }
+
+/* Alloue et retourne une copie de s1, sans les caracteres de set
+	au debut et a la fin de la chaine.
+	Retourne la chaine trimmee, ou NULL si echec d'allocation */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

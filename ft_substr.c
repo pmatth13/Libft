@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/* Alloue et retourne une sous-chaine de s, commencant a l'index start
+	et de longueur maximale len.
+	Retourne la nouvelle chaine (vide si start > len de s),
+	ou NULL si echec d'allocation */
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
