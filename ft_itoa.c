@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/* Alloue et retourne une chaine representant l'entier n en base 10,
+	nombres negatifs compris.
+	Retourne la chaine, ou NULL si echec d'allocation */
+
 static int	ft_len(long n)
 {
 	int	i;

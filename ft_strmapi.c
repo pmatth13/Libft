@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/* Alloue et retourne une nouvelle chaine ou chaque caractere de s est
+	remplace par le resultat de f(index, caractere).
+	Retourne la nouvelle chaine, ou NULL si echec d'allocation */
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*str;
