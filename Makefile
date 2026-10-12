@@ -6,7 +6,7 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/12 20:03:50 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/12 22:38:53 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC = cc
 CFLAGS= -Wall -Wextra -Werror
 # ar = cree/modifie une archive (biblio statique .a)
 #   r : ajoute les .o dans l'archive (remplace ceux qui existent deja)
-#   c : crée l'archive si elle n'existe pas (sans message d'avertissement)
+#   c : crée l'archive si elle n'existe pas
 #   s : ecrit un index des symboles pour que le linker trouve les fonctions
 AR = ar rcs
 RM = rm -f
@@ -49,7 +49,12 @@ SRCS = ft_isalpha.c \
 		ft_split.c \
 		ft_itoa.c \
 		ft_strmapi.c \
-		ft_striteri.c
+		ft_striteri.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c
+		
 
 OBJS = $(SRCS:.c=.o)
 
