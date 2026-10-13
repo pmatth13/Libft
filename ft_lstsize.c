@@ -6,11 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:58:42 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/13 14:51:55 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/13 14:55:02 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Permet de calculer le taille de la liste, retourne la valeur*/
 
 unsigned int	ft_lstsize(t_list *lst)
 {
