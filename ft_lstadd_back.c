@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 15:37:28 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/13 16:06:20 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/13 16:27:33 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (!lst && !new)
+	if (!lst || !new)
 		return ;
 	if (*lst == NULL)
+	{
 		*lst = new;
+		return ;
+	}
 	last = ft_lstlast(*lst);
 	last->next = new;
 }
