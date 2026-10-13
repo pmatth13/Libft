@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:51:35 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/13 12:47:51 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/13 14:50:06 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-	*lst = new;
 	new->next = *lst;
+	*lst = new;
 }
 
-void	print_list(t_list *lst)
+/*void	print_list(t_list *lst)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ void	print_list(t_list *lst)
 		printf("NULL\n");
 }
 
-/*int	main(void)
+int	main(void)
 {
 	t_list	*liste;
 	t_list	*tmp;
