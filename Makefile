@@ -6,7 +6,7 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/12 22:38:53 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/13 11:41:23 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,8 @@ SRCS = ft_isalpha.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c \
+		ft_lstnew.c
 		
 
 OBJS = $(SRCS:.c=.o)
