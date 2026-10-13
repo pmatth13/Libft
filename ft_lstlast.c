@@ -6,11 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:54:22 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/13 15:25:31 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/13 15:27:28 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Permet de retouner le dernier noeud de la liste chainee */
 
 t_list	*ft_lstlast(t_list *lst)
 {
