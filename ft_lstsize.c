@@ -29,7 +29,7 @@ unsigned int	ft_lstsize(t_list *lst)
 
 /* void	print_list(t_list *lst)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (lst && i < 10)
@@ -52,13 +52,13 @@ int	main(void)
 	// Test 1 : ajout dans une liste vide
 	liste = NULL;
 	ft_lstadd_front(&liste, ft_lstnew("A"));
-	printf("taille : %d\n", ft_lstsize(liste));
+	printf("taille : %u\n", ft_lstsize(liste));
 	print_list(liste);
 
 	// Test 2 : ajouts de plusieurs liste
 	ft_lstadd_front(&liste, ft_lstnew("B"));
 	ft_lstadd_front(&liste, ft_lstnew("C"));
-	printf("taille : %d\n", ft_lstsize(liste));
+	printf("taille : %u\n", ft_lstsize(liste));
 	print_list(liste);
 
 	// Liberation des maillons
