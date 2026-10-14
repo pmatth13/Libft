@@ -6,7 +6,7 @@
 #    By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 11:55:17 by psaudell          #+#    #+#              #
-#    Updated: 2026/10/13 16:10:05 by psaudell         ###   ########.fr        #
+#    Updated: 2026/10/14 12:10:13 by psaudell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,8 @@ SRCS = ft_isalpha.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
-		ft_lstdelone.c
+		ft_lstdelone.c \
+		ft_lstclear.c
 		
 
 OBJS = $(SRCS:.c=.o)
