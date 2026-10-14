@@ -6,11 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:28:16 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/14 12:18:13 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/14 13:16:09 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Permet de del et de free tout les noeuds a partir du lst selectionne */
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -26,7 +28,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 }
 
-/*void	print_list(t_list *lst)
+/* void	print_list(t_list *lst)
 {
 	int	i;
 
