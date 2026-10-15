@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 12:35:42 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 11:36:41 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 11:45:16 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static size_t	ft_count(char const *s, char c)
 	i = 0;
 	count = 0;
 	if (!s)
-		return (NULL);
+		return (0);
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
