@@ -12,8 +12,10 @@
 
 #include "libft.h"
 
-/* Verifie si le caractere c est affichable 
-	return 1 if true 0 if false */
+/* Verifie si c est un caractere affichable, espace compris
+	(de 32 ' ' a 126 '~'). Les caracteres de controle (0-31) et
+	DEL (127) ne sont pas affichables.
+	Retour : 1 si c est affichable, 0 sinon. */
 
 int	ft_isprint(int c)
 {

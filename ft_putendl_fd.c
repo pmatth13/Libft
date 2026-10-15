@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/* Ecrit la chaine s sur le file descriptor fd, suivie d'un retour a
+	la ligne '\n'. Reutilise ft_putstr_fd et ft_putchar_fd.
+	Si s est NULL, rien n'est ecrit (pas meme le '\n'). */
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)

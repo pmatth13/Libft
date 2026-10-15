@@ -6,13 +6,18 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:32:18 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 10:47:27 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 11:18:11 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void(*f)(void *))
+/* Parcourt la liste lst et applique la fonction f au contenu de
+	chaque maillon. La liste n'est ni copiee ni modifiee, seul f peut
+	modifier les contenus.
+	Si lst ou f est NULL, rien n'est fait. */
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;

@@ -12,9 +12,12 @@
 
 #include "libft.h"
 
-/* Recherche la derniere occurence du caractere c dans la chaine s
-	(le caractere nul final est inclus dans la recherche)
-	Retourne un pointeur vers cette occurence, ou NULL si non trouve */
+/* Cherche la DERNIERE occurrence du caractere c dans la chaine s.
+	On part de la fin (le '\0', qui fait partie de la recherche) et on
+	remonte vers le debut ; s[0] est teste a part car i est un size_t
+	et ne peut pas descendre sous 0.
+	Retour : un pointeur sur le caractere trouve, ou NULL s'il est
+	absent. */
 
 char	*ft_strrchr(const char *s, int c)
 {

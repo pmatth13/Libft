@@ -12,9 +12,12 @@
 
 #include "libft.h"
 
-/* Alloue et retourne une nouvelle chaine ou chaque caractere de s est
-	remplace par le resultat de f(index, caractere).
-	Retourne la nouvelle chaine, ou NULL si echec d'allocation */
+/* Cree une nouvelle chaine en appliquant f a chaque caractere de s.
+	f recoit l'index du caractere et le caractere, et retourne le
+	nouveau caractere a stocker. s n'est pas modifiee : on travaille
+	sur une copie faite avec ft_strdup.
+	Retour : la nouvelle chaine, ou NULL si s ou f est NULL ou si
+	l'allocation echoue. */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

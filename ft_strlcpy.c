@@ -12,9 +12,12 @@
 
 #include "libft.h"
 
-/* Copie la chaine src dans dest, sans depasser dstsize octets
-	(resultat toujours termine par '\0' si dstsize > 0).
-	Retourne la longueur de src, utile pour detecter une troncature. */
+/* Copie la chaine src dans dest en ecrivant au plus dstsize octets,
+	'\0' compris : au plus dstsize - 1 caracteres sont copies.
+	- le resultat est toujours termine par '\0' si dstsize > 0 ;
+	- si dstsize vaut 0, rien n'est ecrit dans dest.
+	Retour : la longueur de src. Si elle est >= dstsize, la copie a ete
+	tronquee. */
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 {

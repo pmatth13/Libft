@@ -11,9 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-/* Convertie la chaine nptr en entier, en ignorant les espaces blanc initiaux 
-	et un signe eventuel ('+' ou '-')
-	Retourne l'entier correspondant */
+
+/* Convertit le debut de la chaine nptr en int, comme atoi :
+	1. ignore les espaces blancs initiaux (' ', '\t', '\n', '\v',
+	   '\f', '\r', soit 32 et 9 a 13) ;
+	2. lit UN signe optionnel '+' ou '-' ("+-5" donne 0) ;
+	3. lit les chiffres et s'arrete au premier caractere non chiffre.
+	Le depassement d'int n'est pas gere (comportement indefini, comme
+	l'original).
+	Retour : l'entier obtenu, ou 0 si aucun chiffre n'est lu. */
 
 int	ft_atoi(const char *nptr)
 {

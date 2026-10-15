@@ -12,9 +12,13 @@
 
 #include "libft.h"
 
-/* Recherche la premiere occurence de la sous-chaine dans big,
-	en cherchant au maximun dans les len premiers caracteres de big.
-	Retourne un pointeur vers cette occurence, ou NULL si non trouvee. */
+/* Cherche la premiere occurrence de la chaine little dans la chaine big,
+	sans lire plus de len caracteres de big.
+	- si little est vide, on retourne big ;
+	- l'occurrence doit tenir ENTIEREMENT dans les len premiers
+	  caracteres (d'ou le test i + j < len).
+	Retour : un pointeur sur le debut de l'occurrence dans big, ou NULL
+	si little n'est pas trouvee. */
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

@@ -12,7 +12,8 @@
 
 #include "libft.h"
 
-/* Permet de retouner le dernier noeud de la liste chainee */
+/* Retourne le dernier maillon de la liste : celui dont next vaut NULL.
+	Retour : le dernier maillon, ou NULL si la liste est vide. */
 
 t_list	*ft_lstlast(t_list *lst)
 {

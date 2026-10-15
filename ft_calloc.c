@@ -12,9 +12,13 @@
 
 #include "libft.h"
 
-/* Alloue de la memoire pour un tableau de nmemb elements de size octets chacun,
-	et met a zero la memoire allouee.
-	Retourne un ptr vers la memoire allouee, ou NULL si echec d'allocation */
+/* Alloue un tableau de nmemb elements de size octets chacun et met
+	toute la memoire allouee a zero (avec ft_bzero).
+	- si nmemb ou size vaut 0, on retourne malloc(0) : un pointeur
+	  unique qui peut etre passe a free (regle imposee par le sujet) ;
+	- si nmemb * size depasse SIZE_MAX (overflow), on retourne NULL
+	  au lieu d'allouer une taille fausse.
+	Retour : un pointeur sur la memoire allouee, ou NULL si echec. */
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

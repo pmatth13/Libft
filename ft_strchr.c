@@ -12,9 +12,12 @@
 
 #include "libft.h"
 
-/* Recherche la premiere occurence du caractere c dans la chaine s
-	(le caractere nul final est inclus dans la recherche)
-	Retourne un pointeur vers cette occurence, ou NULL si non trouve*/
+/* Cherche la PREMIERE occurrence du caractere c dans la chaine s.
+	- c est converti en char avant la comparaison ;
+	- le '\0' final fait partie de la recherche : chercher '\0'
+	  renvoie un pointeur sur la fin de la chaine.
+	Retour : un pointeur sur le caractere trouve, ou NULL s'il est
+	absent. */
 
 char	*ft_strchr(const char *s, int c)
 {

@@ -12,9 +12,12 @@
 
 #include "libft.h"
 
-/* Compare les n premiers caracteres des chaines s1 et s2 
-	Retourne la difference entre les premiers caracteres qui different
-	(en unsigned char), ou 0 si les chaines sont identiques sur n octets */
+/* Compare au plus les n premiers caracteres des chaines s1 et s2.
+	La comparaison s'arrete a la premiere difference, a la fin d'une
+	des chaines ('\0') ou apres n caracteres.
+	Les caracteres sont compares en unsigned char (comme la libc), pour
+	que les caracteres > 127 soient consideres comme plus grands.
+	Retour : 0 si egales, < 0 si s1 < s2, > 0 si s1 > s2. */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

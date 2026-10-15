@@ -13,10 +13,10 @@
 #include "libft.h"
 
 /* Alloue et retourne un nouveau maillon de liste chainee.
-	- content prend la valeur du parametre content (pas de copie,
-		on garde juste le pointeur)
-	- next est initialise a NULL car le maillon n'est relie a rien
-	Retourne le nouveau maillon, ou NULL si echec d'allocation */
+	- content recoit le pointeur passe en parametre (pas de copie
+	  des donnees : seul le pointeur est stocke) ;
+	- next est initialise a NULL car le maillon n'est relie a rien.
+	Retour : le nouveau maillon, ou NULL si l'allocation echoue. */
 
 t_list	*ft_lstnew(void *content)
 {

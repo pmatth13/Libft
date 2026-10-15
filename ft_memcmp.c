@@ -12,9 +12,11 @@
 
 #include "libft.h"
 
-/* compare les n premiers octets des zones memoire s1 et s2.
-	Retourne la difference entre les premiers octets qui different 
-	en (unsigned char), ou 0 si les zones sont identiques sur n octets.*/
+/* Compare les n premiers octets des zones memoire s1 et s2.
+	Les octets sont lus en unsigned char et la comparaison ne s'arrete
+	pas sur un '\0' (zones memoire, pas des chaines).
+	Retour : la difference entre les premiers octets differents,
+	ou 0 si les n octets sont identiques (ou si n vaut 0). */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

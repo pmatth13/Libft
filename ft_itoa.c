@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-/* Alloue et retourne une chaine representant l'entier n en base 10,
-	nombres negatifs compris.
-	Retourne la chaine, ou NULL si echec d'allocation */
+/* Fonction d'aide : compte le nombre de caracteres necessaires pour
+	ecrire n en base 10, signe '-' compris. 0 s'ecrit avec 1 caractere.
+	n est un long pour pouvoir faire -n sur INT_MIN sans overflow. */
 
 static int	ft_len(long n)
 {
@@ -35,6 +35,14 @@ static int	ft_len(long n)
 	}
 	return (i);
 }
+
+/* Alloue et retourne la chaine qui represente l'entier n en base 10.
+	- n est copie dans un long, car -INT_MIN ne tient pas dans un int ;
+	- la chaine est remplie de la droite vers la gauche avec n % 10
+	  (le dernier chiffre), puis n / 10 ;
+	- le '-' est place en premiere case si n est negatif.
+	Ex : ft_itoa(-42) donne "-42".
+	Retour : la chaine, ou NULL si l'allocation echoue. */
 
 char	*ft_itoa(int n)
 {

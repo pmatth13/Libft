@@ -12,8 +12,11 @@
 
 #include "libft.h"
 
-/* Convertit le caractere c en minuscule si majuscule sinon
-	le retourne inchange */
+/* Convertit une lettre majuscule en minuscule.
+	On calcule la position de c dans l'alphabet (c - 'A') puis on la
+	reporte a partir de 'a'.
+	Retour : la minuscule correspondante, ou c inchange s'il n'est pas
+	une lettre majuscule. */
 
 int	ft_tolower(int c)
 {

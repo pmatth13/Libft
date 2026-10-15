@@ -12,10 +12,12 @@
 
 #include "libft.h"
 
-/* Copie n octets de la zone memoire src vers la zone memoire dest
-	meme si les 2 zones se chevauchent (copie dans le bon sens selon
-	les positions relatives de dest et src).
-	Retourne un pointeur vers dest. */
+/* Copie n octets de src vers dest, meme si les deux zones se chevauchent.
+	- si dest est apres src (d > s), on copie de la fin vers le debut,
+	  pour ne pas ecraser des octets de src pas encore copies ;
+	- sinon on copie du debut vers la fin, comme ft_memcpy.
+	Si dest et src sont NULL, on retourne NULL sans rien faire.
+	Retour : le pointeur dest. */
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

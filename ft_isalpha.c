@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-/*Verifie si le caractere est une lettre (minuscule ou majuscule)
-    return 1 if true, 0 if false*/
+/* Verifie si c est une lettre de l'alphabet ASCII ('a'-'z' ou 'A'-'Z').
+	Parametre : c, le caractere a tester (passe en int, comme dans la libc).
+	Retour : 1 si c est une lettre, 0 sinon. */
 
 int	ft_isalpha(int c)
 {

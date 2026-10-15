@@ -12,8 +12,11 @@
 
 #include "libft.h"
 
-/* Ajoute un maillon 'new' au debut d'une liste existante. Le nouveau maillon
-	devient donc la nouvelle tete de liste */
+/* Ajoute le maillon new au DEBUT de la liste *lst.
+	new->next pointe sur l'ancienne tete, puis *lst pointe sur new :
+	new devient la nouvelle tete. lst est un t_list ** pour pouvoir
+	modifier le pointeur de tete de l'appelant.
+	Si lst ou new est NULL, rien n'est fait. */
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

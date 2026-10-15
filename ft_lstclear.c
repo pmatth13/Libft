@@ -12,7 +12,12 @@
 
 #include "libft.h"
 
-/* Permet de del et de free tout les noeuds a partir du lst selectionne */
+/* Libere le maillon *lst et tous ses suivants, avec del pour le
+	contenu et free pour les maillons (via ft_lstdelone).
+	On sauvegarde next AVANT de supprimer chaque maillon, sinon on
+	perdrait la suite de la liste.
+	A la fin, *lst vaut NULL : la liste de l'appelant est vide.
+	Si lst ou del est NULL, rien n'est fait. */
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

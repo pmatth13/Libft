@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-/* Verifie si le caractere est un chiffre ('0' - '9')
-        return 1 if true, 0 if false*/
+/* Verifie si c est un chiffre decimal ('0' a '9').
+	Parametre : c, le caractere a tester.
+	Retour : 1 si c est un chiffre, 0 sinon. */
 
 int	ft_isdigit(int c)
 {

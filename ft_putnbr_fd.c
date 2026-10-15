@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/* Ecrit l'entier n en base 10 sur le file descriptor fd.
+	- n est copie dans un long pour gerer INT_MIN (-2147483648),
+	  dont l'oppose ne tient pas dans un int ;
+	- si le nombre est negatif, on ecrit '-' puis on le rend positif ;
+	- recursion : on ecrit d'abord nb / 10 (les chiffres de gauche),
+	  puis le dernier chiffre nb % 10 converti en caractere. */
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

@@ -12,11 +12,13 @@
 
 #include "libft.h"
 
-/* Concatene la chaine src a la suite de la chaine dst, 
-	sans depasser dsize octets au total dans dst
-	(resultat toujours termine par '\0')
-	Retourne la taille totale que la chaine aurait du avoir (dst_len + src_len), 
-	utile pour detecter une troncature */
+/* Ajoute la chaine src a la fin de dst, dsize etant la taille TOTALE
+	du buffer dst (pas la place restante).
+	- au plus dsize - dst_len - 1 caracteres sont ajoutes, puis '\0' ;
+	- si dsize <= dst_len, il n'y a pas la place : rien n'est ecrit et
+	  on retourne dsize + src_len.
+	Retour : la longueur de la chaine que l'on a essaye de creer
+	(dst_len + src_len). Si elle est >= dsize, il y a eu troncature. */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {

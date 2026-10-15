@@ -12,8 +12,12 @@
 
 #include "libft.h"
 
-/* Convertit le caractere c en majuscule si minuscule sinon 
-	le retourne inchange*/
+/* Convertit une lettre minuscule en majuscule.
+	Dans la table ASCII, 'a' (97) et 'A' (65) sont separes de 32 :
+	il suffit donc de retirer 32 a une minuscule.
+	Retour : la majuscule correspondante, ou c inchange s'il n'est pas
+	une lettre minuscule. */
+
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

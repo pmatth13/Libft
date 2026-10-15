@@ -12,8 +12,11 @@
 
 #include "libft.h"
 
-/* parcourt s et, pour chaque caractère, appelle f en lui donnant l'index et 
-	l'adresse de ce caractère dans s*/
+/* Applique la fonction f a chaque caractere de s, en lui passant
+	l'index du caractere et son ADRESSE (&s[i]).
+	Comme f recoit un pointeur, elle peut modifier la chaine
+	directement : rien n'est alloue.
+	Si s ou f est NULL, la fonction ne fait rien. */
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

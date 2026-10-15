@@ -6,13 +6,23 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 10:08:59 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 10:55:50 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 11:18:59 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+/* Cree une NOUVELLE liste en appliquant f au contenu de chaque maillon
+	de lst. La liste d'origine n'est pas modifiee.
+	- pour chaque maillon : tmp = f(contenu), puis ft_lstnew(tmp) et
+	  ajout a la fin de la nouvelle liste ;
+	- si ft_lstnew echoue, on libere tmp avec del et toute la nouvelle
+	  liste avec ft_lstclear, pour ne laisser aucune fuite.
+	Retour : la nouvelle liste, ou NULL si un parametre est NULL ou si
+	une allocation echoue. */
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)
+					(void *))
 {
 	t_list	*new_list;
 	void	*tmp;

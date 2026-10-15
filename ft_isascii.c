@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-/* Verifie si le caractere c fait partie de la table ASCII (0-127) 
-	return 1 if true 0 if false */
+/* Verifie si c appartient a la table ASCII standard (valeurs 0 a 127).
+	Les valeurs negatives et superieures a 127 ne sont pas ASCII.
+	Retour : 1 si c est un caractere ASCII, 0 sinon. */
 
 int	ft_isascii(int c)
 {

@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-/* Permet de calculer le taille de la liste, retourne la valeur*/
+/* Compte le nombre de maillons de la liste en la parcourant jusqu'a
+	NULL.
+	Retour : le nombre de maillons (0 si lst est NULL). */
 
 unsigned int	ft_lstsize(t_list *lst)
 {

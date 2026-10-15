@@ -12,8 +12,11 @@
 
 #include "libft.h"
 
-/* Alloue et retourne une copie de la chaine s, terminee par un '\0'.
-	Retourne un pointeur vers la nouvelle chaine, ou NULL en cas d'echec*/
+/* Cree une copie de la chaine s dans une nouvelle zone allouee avec
+	malloc (taille : ft_strlen(s) + 1 pour le '\0').
+	La copie doit etre liberee avec free par l'appelant.
+	Retour : un pointeur sur la nouvelle chaine, ou NULL si echec
+	d'allocation. */
 
 char	*ft_strdup(const char *s)
 {

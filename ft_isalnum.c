@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-/* Verifie si le caractere c est alphanumerique (lettre ou chiffre)
-	return 1 if true, 0 if false */
+/* Verifie si c est alphanumerique, c'est-a-dire une lettre OU un chiffre.
+	Reutilise ft_isalpha et ft_isdigit pour ne pas dupliquer les tests.
+	Retour : 1 si c est alphanumerique, 0 sinon. */
 
 int	ft_isalnum(int c)
 {

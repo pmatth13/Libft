@@ -6,15 +6,15 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 12:35:42 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/08 17:05:40 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 11:36:41 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Alloue et retourne un tableau de chaines obtenu en decoupant s
-	selon le caractere separateur c. Le tableau est termine par NULL.
-	Retourne le tableau, ou NULL si echec d'allocation */
+/* Fonction d'aide : compte le nombre de mots dans s, un mot etant une
+	suite de caracteres differents du separateur c.
+	Les separateurs consecutifs, au debut ou a la fin sont ignores. */
 
 static size_t	ft_count(char const *s, char c)
 {
@@ -23,6 +23,8 @@ static size_t	ft_count(char const *s, char c)
 
 	i = 0;
 	count = 0;
+	if (!s)
+		return (NULL);
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
@@ -34,6 +36,10 @@ static size_t	ft_count(char const *s, char c)
 	}
 	return (count);
 }
+
+/* Fonction d'aide : en cas d'echec d'allocation, libere les j chaines
+	deja allouees puis le tableau lui-meme, pour eviter les fuites.
+	Retour : toujours NULL, pour pouvoir faire return (ft_free_tab()). */
 
 static char	**ft_free_tab(char **tab, size_t j)
 {
@@ -49,6 +55,9 @@ static char	**ft_free_tab(char **tab, size_t j)
 	return (NULL);
 }
 
+/* Fonction d'aide : retourne la longueur du mot qui commence en s,
+	c'est-a-dire le nombre de caracteres avant c ou '\0'. */
+
 static size_t	ft_len(const char *s, char c)
 {
 	size_t	i;
@@ -58,6 +67,15 @@ static size_t	ft_len(const char *s, char c)
 		i++;
 	return (i);
 }
+
+/* Decoupe la chaine s en mots selon le separateur c et retourne un
+	tableau de chaines termine par NULL.
+	1. compte les mots (ft_count) et alloue nb_str + 1 pointeurs ;
+	2. pour chaque mot : saute les separateurs, mesure le mot (ft_len)
+	   et le copie avec ft_substr ;
+	3. si une allocation echoue, tout est libere (ft_free_tab).
+	Ex : ft_split("  a bb ", ' ') donne {"a", "bb", NULL}.
+	Retour : le tableau, ou NULL si une allocation echoue. */
 
 char	**ft_split(char const *s, char c)
 {

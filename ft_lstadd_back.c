@@ -12,7 +12,11 @@
 
 #include "libft.h"
 
-/* Permet d'ajouter le noeud 'new' a la fin de la liste */
+/* Ajoute le maillon new a la FIN de la liste *lst.
+	- si la liste est vide (*lst == NULL), new devient la tete ;
+	- sinon on recupere le dernier maillon (ft_lstlast) et on le
+	  relie a new.
+	Si lst ou new est NULL, rien n'est fait. */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

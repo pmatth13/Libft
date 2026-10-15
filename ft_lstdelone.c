@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-/* Permet de free le noeud passe en parametre sans free les noeuds suivant */
+/* Libere UN seul maillon : son contenu avec del, puis le maillon
+	lui-meme avec free. Le maillon suivant n'est PAS libere : c'est a
+	l'appelant de garder lst->next avant l'appel s'il en a besoin.
+	Si lst ou del est NULL, rien n'est fait. */
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

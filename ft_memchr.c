@@ -12,9 +12,11 @@
 
 #include "libft.h"
 
-/* Recherche la premiere occurence de l'octet c dans les n premiers 
-	octets de la zone memoire s.
-	Retourne un pointeur vers cette occurence, ou NULL si non trouve */
+/* Cherche la premiere occurrence de l'octet c (converti en unsigned char)
+	dans les n premiers octets de la zone memoire s.
+	Contrairement a ft_strchr, la recherche ne s'arrete pas sur un '\0' :
+	seul n limite la recherche.
+	Retour : un pointeur sur l'octet trouve, ou NULL s'il est absent. */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
