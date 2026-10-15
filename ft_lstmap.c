@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 10:08:59 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 11:18:59 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 15:14:12 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,9 +106,7 @@ int	main(void)
 	t_list	*mapped;
 	char	*buf;
 
-	printf("==============================================\n");
 	printf("            TESTS LISTES CHAINEES             \n");
-	printf("==============================================\n");
 
 	// Test 1 : ajout dans une liste vide
 	// (ft_strdup pour que le content soit malloc et puisse etre free par del)
@@ -195,9 +193,7 @@ int	main(void)
 			del_print));
 	ft_lstclear(&mapped, del_print);
 	ft_lstclear(&copy, del_print);
-
-	printf("\n==============================================\n");
+	
 	printf("               FIN DES TESTS                  \n");
-	printf("==============================================\n");
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 15:25:06 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/07 12:45:14 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 16:24:37 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,16 +46,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/*#include <stdio.h>
-
-int	main(void)
+/* int	main(void)
 {
-	char	str[] = "abcdefghij";
-	char	nb[] = "0123456789";
-
-	ft_memmove(str + 2, str, 5);
-	printf("%s\n", str);
-	ft_memmove(nb, nb + 2, 5);
-	printf("%s\n", nb);
+	char	src[] = "Hello World";
+	char	src2[] = "Hello Word";
+	ft_memmove(src + 2, src, 5);
+	printf("%s\n", src);
+	ft_memmove(src2, src2 + 2, 5);
+	printf("%s\n", src2);
 	return (0);
 } */

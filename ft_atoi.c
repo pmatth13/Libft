@@ -6,13 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 11:36:50 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/07 11:53:17 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 13:58:49 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Convertit le debut de la chaine nptr en int, comme atoi :
+/* Convertit le debut de la chaine nptr en int:
 	1. ignore les espaces blancs initiaux (' ', '\t', '\n', '\v',
 	   '\f', '\r', soit 32 et 9 a 13) ;
 	2. lit UN signe optionnel '+' ou '-' ("+-5" donne 0) ;
@@ -45,3 +45,17 @@ int	ft_atoi(const char *nptr)
 	}
 	return (number * sign);
 }
+
+/* int main(void)
+{
+	printf("ft_atoi: %d\n", ft_atoi("	 	123		4"));
+	printf("atoi: %d\n", atoi("	 	123		4"));
+	printf("ft_atoi: %d\n", ft_atoi("-123		"));
+	printf("atoi: %d\n", atoi("-123		"));
+	printf("ft_atoi: %d\n", ft_atoi(" 	+-123		4"));
+	printf("atoi: %d\n", atoi(" 	+-123		4"));
+	printf("ft_atoi: %d\n", ft_atoi("-2147483648"));
+	printf("atoi: %d\n", atoi("-2147483648"));
+	printf("ft_atoi: %d\n", ft_atoi(""));
+	printf("atoi: %d\n", atoi(""));
+} */

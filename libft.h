@@ -6,17 +6,19 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 11:55:21 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 11:20:19 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 15:29:55 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdio.h>
+# include <string.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdint.h>
+# include <limits.h>
 
 int				ft_isalpha(int c);
 int				ft_isascii(int c);

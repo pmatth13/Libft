@@ -6,14 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:15:35 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 12:24:06 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 14:48:57 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* Verifie si c est un chiffre decimal ('0' a '9').
-	Parametre : c, le caractere a tester.
 	Retour : 1 si c est un chiffre, 0 sinon. */
 
 int	ft_isdigit(int c)
