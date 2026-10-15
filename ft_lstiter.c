@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:32:18 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/14 13:14:50 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/15 10:47:27 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_lstiter(t_list *lst, void(*f)(void *))
 	}
 }
 
-void	print_list(t_list *lst)
+/*void	print_list(t_list *lst)
 {
 	int	i;
 
@@ -146,4 +146,4 @@ int	main(void)
 	printf("               FIN DES TESTS                  \n");
 	printf("==============================================\n");
 	return (0);
-}
+}*/
