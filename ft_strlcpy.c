@@ -6,14 +6,14 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 15:40:03 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 15:49:05 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 13:21:50 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* Copie la chaine src dans dest en ecrivant au plus dstsize octets,
-	'\0' compris : au plus dstsize - 1 caracteres sont copies.
+	'\0' compris : dstsize - 1 caracteres sont copies.
 	- le resultat est toujours termine par '\0' si dstsize > 0 ;
 	- si dstsize vaut 0, rien n'est ecrit dans dest.
 	Retour : la longueur de src. Si elle est >= dstsize, la copie a ete
@@ -36,3 +36,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	dest[i] = '\0';
 	return (len);
 }
+
+/* int	main(void)
+{
+	char	dst[10];
+	size_t	copy;
+
+	copy = ft_strlcpy(dst, "Hello World!", 6);
+	printf("retour : %zu, dst : %s\n", copy, dst);
+	return (0);
+} */

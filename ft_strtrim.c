@@ -6,11 +6,20 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 17:19:23 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/08 12:30:49 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:19:21 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Alloue et retourne une copie de s1 sans les caracteres de set
+	presents au DEBUT et a la FIN de la chaine (pas au milieu).
+	- i avance depuis le debut tant que s1[i] est dans set ;
+	- end recule depuis la fin tant que s1[end - 1] est dans set ;
+	- on copie ensuite s1[i] a s1[end - 1].
+	Ex : ft_strtrim("xxhixx", "x") donne "hi".
+	Retour : la chaine trimmee (eventuellement vide), ou NULL si un
+	parametre est NULL ou si l'allocation echoue. */
 
 /* Fonction d'aide : verifie si le caractere c fait partie de set.
 	Retour : 1 si c est dans set, 0 sinon. */
@@ -28,15 +37,6 @@ static size_t	ft_flag(char c, char const *set)
 	}
 	return (0);
 }
-
-/* Alloue et retourne une copie de s1 sans les caracteres de set
-	presents au DEBUT et a la FIN de la chaine (pas au milieu).
-	- i avance depuis le debut tant que s1[i] est dans set ;
-	- end recule depuis la fin tant que s1[end - 1] est dans set ;
-	- on copie ensuite s1[i] a s1[end - 1].
-	Ex : ft_strtrim("xxhixx", "x") donne "hi".
-	Retour : la chaine trimmee (eventuellement vide), ou NULL si un
-	parametre est NULL ou si l'allocation echoue. */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

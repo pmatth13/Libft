@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 17:32:18 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 17:37:14 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:17:12 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,17 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+/* int	main(void)
+{
+	char	str[]= "Hello world !";
+	int		c;
+	int		b;
+
+	c = 33;
+	b = 35;
+	printf("Le caractere recherche est : '%c' dans : %s,
+	 il est affiché si retrouvé : %s\n" ,c , str, ft_strchr(str, c));
+	printf("Le caractere recherche est : '%c' dans : %s, 
+	il est affiché si retrouvé : %s\n" ,b , str, ft_strchr(str, b));
+} */

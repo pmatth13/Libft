@@ -6,11 +6,20 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/08 12:35:42 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 11:45:16 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:15:34 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Decoupe la chaine s en mots selon le separateur c et retourne un
+	tableau de chaines termine par NULL.
+	1. compte les mots (ft_count) et alloue nb_str + 1 pointeurs ;
+	2. pour chaque mot : saute les separateurs, mesure le mot (ft_len)
+	   et le copie avec ft_substr ;
+	3. si une allocation echoue, tout est libere (ft_free_tab).
+	Ex : ft_split("  a bb ", ' ') donne {"a", "bb", NULL}.
+	Retour : le tableau, ou NULL si une allocation echoue. */
 
 /* Fonction d'aide : compte le nombre de mots dans s, un mot etant une
 	suite de caracteres differents du separateur c.
@@ -68,15 +77,6 @@ static size_t	ft_len(const char *s, char c)
 	return (i);
 }
 
-/* Decoupe la chaine s en mots selon le separateur c et retourne un
-	tableau de chaines termine par NULL.
-	1. compte les mots (ft_count) et alloue nb_str + 1 pointeurs ;
-	2. pour chaque mot : saute les separateurs, mesure le mot (ft_len)
-	   et le copie avec ft_substr ;
-	3. si une allocation echoue, tout est libere (ft_free_tab).
-	Ex : ft_split("  a bb ", ' ') donne {"a", "bb", NULL}.
-	Retour : le tableau, ou NULL si une allocation echoue. */
-
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -111,7 +111,7 @@ char	**ft_split(char const *s, char c)
 	char	**tab;
 	int		k;
 
-	tab = ft_split("Hello World", ' ');
+	tab = ft_split("    Hello World, it's crazy", ' ');
 	k = 0;
 	while (tab[k])
 	{
@@ -121,4 +121,4 @@ char	**ft_split(char const *s, char c)
 	}
 	free(tab);
 	return (0);
-} */
+}*/

@@ -6,15 +6,15 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 18:31:18 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 18:44:37 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 13:42:46 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* Cherche la premiere occurrence de la chaine little dans la chaine big,
-	sans lire plus de len caracteres de big.
-	- si little est vide, on retourne big ;
+/* Cherche la premiere occurrence de la chaine 'little' dans la chaine 'big',
+	sans lire plus de 'len' caracteres de big.
+	- si 'little' est vide, on retourne 'big' ;
 	- l'occurrence doit tenir ENTIEREMENT dans les len premiers
 	  caracteres (d'ou le test i + j < len).
 	Retour : un pointeur sur le debut de l'occurrence dans big, ou NULL
@@ -39,3 +39,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+/*int	main(void)
+{
+	char	big[] = "Hello world !";
+
+	printf("'world' dans les 13 premiers : %s\n", ft_strnstr(big, "world", 13));
+	printf("'world' dans les 8 premiers  : %s\n", ft_strnstr(big, "world", 8));
+	printf("'' (vide)                    : %s\n", ft_strnstr(big, "", 5));
+	printf("'abc' introuvable            : %s\n", ft_strnstr(big, "abc", 13));
+} */

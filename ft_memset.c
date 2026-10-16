@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 14:31:50 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 14:17:47 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:16:08 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,4 +51,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	printf("%d\n", str[0]);
 	return (0);
 } */
-

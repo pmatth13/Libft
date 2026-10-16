@@ -6,15 +6,13 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 16:32:47 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/08 12:25:42 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 12:53:32 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* Alloue et retourne une nouvelle chaine : s1 suivie de s2.
-	La taille allouee est ft_strlen(s1) + ft_strlen(s2) + 1 ('\0').
-	s1 et s2 ne sont pas modifiees ni liberees.
 	Retour : la nouvelle chaine, ou NULL si s1 ou s2 est NULL ou si
 	l'allocation echoue. */
 
@@ -46,12 +44,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-/*int main(void)
+/* int main(void)
 {
 	char *s1;
 	char *s2;
 
 	s1 = "Hello ";
 	s2 = "World";
-	printf("%s\n", ft_strjoin(s1, s2));
+	printf("Le 1er mot est  : %s\n", s1);
+	printf("Le 2eme mot est : %s\n", s2);
+	printf("Les 2 mots colles avec ft_strjoin : %s\n", ft_strjoin(s1, s2));
 } */

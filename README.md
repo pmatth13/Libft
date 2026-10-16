@@ -110,4 +110,4 @@ cc main.c -I. -L. -lft -o my_program
 - peers at 42
 
 AI was used to explain some concepts or test, not to write the code.
-AI help me to create the readme.
+AI helped me to create the readme.

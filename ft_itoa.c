@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/11 05:31:47 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 15:09:45 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:16:17 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 	  (le dernier chiffre), puis n / 10 ;
 	- le '-' est place en premiere case si n est negatif.
 	Retour : la chaine, ou NULL si l'allocation echoue. */
-
 
 /* Fonction d'aide : compte le nombre de caracteres necessaires pour
 	ecrire n en base 10, signe '-' compris.

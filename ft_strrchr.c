@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 17:12:39 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/06 17:31:15 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 13:46:12 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,14 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[0]);
 	return (NULL);
 }
+
+/* int	main(void)
+{
+	char	str[]= "Hello world !";
+
+	printf("Derniere occurrence de 'o' dans \"%s\" : %s\n",
+		str, ft_strrchr(str, 'o'));
+	printf("Derniere occurrence de 'z' dans \"%s\" : %s\n",
+		str, ft_strrchr(str, 'z'));
+	printf("Recherche du '\\0' : \"%s\"\n", ft_strrchr(str, '\0'));
+} */

@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/12 19:38:49 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/12 20:03:03 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 12:50:02 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-/*static void ft_change_a(unsigned int i, char *c)
+/* static void ft_change_a(unsigned int i, char *c)
 {
 	(void)i;
 	if (*c == 'a')
@@ -41,9 +41,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 int	main(void)
 {
-	char s[200] = "maison";
+	char s[] = "maison";
 
+	printf("String de base  : %s\n", s);
 	ft_striteri(s, ft_change_a);
-	printf("%s\n", s );
+	printf("String modifiee : %s\n", s );
 	return (0);
-}*/
+} */

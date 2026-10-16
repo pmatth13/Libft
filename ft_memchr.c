@@ -6,7 +6,7 @@
 /*   By: psaudell <psaudell@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 17:46:05 by psaudell          #+#    #+#             */
-/*   Updated: 2026/10/15 15:46:19 by psaudell         ###   ########.fr       */
+/*   Updated: 2026/10/16 14:17:45 by psaudell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	else
 		printf("2. ft_memchr : NULL\n");
 	if (original2)
-		printf("2. memchr    : \"%s\" (index %ld)\n", original2, original2 - str);
+		printf("2. memchr    : \"%s\" (index %ld)\n", original2, 
+		original2 - str);
 	else
 		printf("2. memchr    : NULL\n");
 	return (0);
